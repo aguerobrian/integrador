@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    
+}
+/* NAV BAR y contenidos */
+nav{
+    width: 100vw;
+    margin-right: ;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(1,0,8);
+    background: linear-gradient(90deg, rgba(1,0,8,0.01) 0%, rgba(149,4,14,1) 78%, rgba(88,15,15,1) 100%);
+}
+
+
+@media(max-width:800px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    
+    }
+  
+.logo img{
+    margin: 20px 0px 5px 50px;
+    width: 100px;
+    color: white;
+}
+
+@media (max-width:800px){
+    .logo img{
+        width: 120px;
+        margin-top:20px ;
+    }
+}
+
+
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+
+}
+
+.navegacion ul li{
+    margin: 15px;
+    
+}
+.navegacion ul li:hover{
+    color: rgb(175, 228, 28);
+    cursor: pointer;
+}
+
+
+/* Portada */
+
+.portada{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.portada img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.portada h1{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     font-size: 100px;
+}
+
+.portada .logo-fondo{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+@media(max-width:800px){
+    .portada h1{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: 60px;
+        margin-top: 250px
+
+    }
+}
